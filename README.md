@@ -28,4 +28,4 @@ Also make future reminders for any tasks you add.
 
 #######################
 
-Future Tasks Working - Adding more screen, feature and options.
+Future Tasks Working - Adding more screens, features and options.
