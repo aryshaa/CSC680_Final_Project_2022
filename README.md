@@ -20,4 +20,3 @@ Add button - Click Add button to save your task.
 Search Button - You can search any tasks.
 Delete Button - Delete button helps you remove any task that you don't like or want.
 Also make future reminders for any tasks you add.
-
