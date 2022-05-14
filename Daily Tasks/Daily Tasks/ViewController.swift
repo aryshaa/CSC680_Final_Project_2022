@@ -2,13 +2,15 @@
 //  ViewController.swift
 //  Daily Tasks
 //
-//  Created by Aryan Sharma on 5/10/22.
+//  Created by Aryan Sharma on 4/10/22.
 //
 
 import UserNotifications
 import UIKit
 
-class ViewController: UIViewController {
+
+ 
+class ViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet var table: UITableView!
         
@@ -18,8 +20,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
+    
+        
+        
         // Do any additional setup after loading the view.
     }
+  
     @IBAction func didTapAdd(){
         //show add vc
         guard let vc = storyboard?.instantiateViewController(identifier: "add") as? AddViewController else {
@@ -60,6 +66,7 @@ class ViewController: UIViewController {
         
         navigationController?.pushViewController(vc, animated: true)
     }
+   
     @IBAction func didTapTest(){
         //fire test notification
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: {success, error in
@@ -95,6 +102,7 @@ class ViewController: UIViewController {
     }
 }
 
+
 extension ViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
@@ -120,11 +128,30 @@ extension ViewController: UITableViewDataSource{
         cell.detailTextLabel?.text = formatter.string(from: date)
         return cell
     }
+    func tableview(_ tableview: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return.delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            models.remove(at: indexPath.row)
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            tableView.endUpdates()
+        }
+    }
     
     
 }
+
+
 struct MyReminder {
     let title: String
     let date: Date
     let identifier: String
 }
+
+
+
