@@ -6,12 +6,20 @@ Proposals - My project will be an application where any one can add their daily 
 
 Application Features - 
 Daily Task Reminder App 
+
 Take Notes - You can add title and description in the text field and then save it.
+
 Save Button - Save button help you save your tasks that you write.
+
 Alarm function - While adding task you can add reminder button and there will a option of time and date. This will 
-tell you when is your task due
+tell you when is your task due.
+
 Time and Date - Select time and date while add tasks.
+
 Add button - Click Add button to save your task.
+
 Search Button - You can search any tasks.
+
 Delete Button - Delete button helps you remove any task that you don't like or want.
+
 Also make future reminders for any tasks you add.
