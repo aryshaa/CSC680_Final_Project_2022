@@ -11,8 +11,7 @@ Take Notes - You can add title and description in the text field and then save i
 
 Save Button - Save button help you save your tasks that you write.
 
-Alarm function - While adding task you can add reminder button and there will a option of time and date. This will 
-tell you when is your task due.
+Alarm function - While adding task you can add reminder button and there will a option of time and date. This will tell you when is your task due.
 
 Time and Date - Select time and date while add tasks.
 
