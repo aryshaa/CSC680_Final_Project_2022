@@ -1,11 +1,6 @@
 Daily Tasks Reminder App
 
 Team Member: Aryan Sharma
-Github: aryshaa
-
-How To Run:
-
-After Cloning the repository, Open the folder Daily Tasks and Run it. 
 
 Proposals - My project will be an application where any one can add their daily tasks to completion and also can put a timer or reminder which will help in telling when their important task is due. 
 
