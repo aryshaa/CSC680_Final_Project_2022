@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
-    /* 앱 설정 변수 */
+    
     var window: UIWindow?
     
     var fontSize: String? = "Medium"
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     /* ================== */
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound], completionHandler: { (authorized, error) in
             if !authorized {
                print("App is useless becase you did not allow notification")
@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         let content = UNMutableNotificationContent()
         content.title = title
-        content.body = "뭔가 잊어버린 일이 없으신가요?"
+        content.body = "hello"
         content.sound = UNNotificationSound.default
         content.categoryIdentifier = "eduCategory"
         
