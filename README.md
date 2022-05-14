@@ -4,6 +4,7 @@ Team Member: Aryan Sharma
 
 Proposals - My project will be an application where any one can add their daily tasks to completion and also can put a timer or reminder which will help in telling when their important task is due. 
 
+#####################
 Application Features - 
 Daily Task Reminder App 
 
@@ -22,3 +23,4 @@ Search Button - You can search any tasks.
 Delete Button - Delete button helps you remove any task that you don't like or want.
 
 Also make future reminders for any tasks you add.
+#######################
